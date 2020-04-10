@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="214">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="213">
+            <objects>
+                <navigationController id="214" sceneMemberID="viewController" storyboardIdentifier="ConnectNavViewController" customClass="ConnectNavViewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="216">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="225" kind="relationship" relationship="rootViewController" id="275"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="217" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="208"/>
+        </scene>
+        <!--Connexion-->
+        <scene sceneID="224">
+            <objects>
+                <viewController storyboardIdentifier="ConnectViewController" id="225" customClass="ConnectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="222"/>
+                        <viewControllerLayoutGuide type="bottom" id="223"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="226">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon/pet-shop.png" translatesAutoresizingMaskIntoConstraints="NO" id="278">
+                                <rect key="frame" x="123.5" y="136" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="5842"/>
+                                    <constraint firstAttribute="height" constant="128" id="5843"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom d'utilisateur" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="288">
+                                <rect key="frame" x="61" y="300" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5849"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="291">
+                                <rect key="frame" x="61" y="356" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5856"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-k9-ldl">
+                                <rect key="frame" x="85" y="394" width="205" height="40"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Connexion"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BtnConnect_TouchUpInside:" destination="225" eventType="touchUpInside" id="741"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="75244" firstAttribute="width" constant="205"/>
+                                    <constraint id="75245" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="742">
+                                <rect key="frame" x="85" y="607" width="205" height="40"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Inscription"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="850" kind="show" id="74677"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="75251" firstAttribute="width" constant="205"/>
+                                    <constraint id="75252" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="75255" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="85" y="442" width="205" height="30"/>
+                                <state key="normal" title="Mot de passe perdu ?"/>
+                                <connections>
+                                    <segue id="77270" destination="75259" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="77363" firstAttribute="width" constant="205"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="278" firstAttribute="top" secondItem="222" secondAttribute="bottom" constant="72" id="5844"/>
+                            <constraint firstItem="278" firstAttribute="centerX" secondItem="226" secondAttribute="centerX" id="5845"/>
+                            <constraint firstItem="288" firstAttribute="top" secondItem="222" secondAttribute="bottom" constant="236" id="5850"/>
+                            <constraint firstItem="288" firstAttribute="centerX" secondItem="226" secondAttribute="centerX" id="5851"/>
+                            <constraint firstItem="291" firstAttribute="top" secondItem="222" secondAttribute="bottom" constant="292" id="5857"/>
+                            <constraint firstItem="291" firstAttribute="centerX" secondItem="226" secondAttribute="centerX" id="5858"/>
+                            <constraint id="75246" firstItem="0sS-k9-ldl" firstAttribute="top" secondItem="222" secondAttribute="bottom" constant="330"/>
+                            <constraint id="75247" firstItem="0sS-k9-ldl" firstAttribute="centerX" secondItem="226" secondAttribute="centerX"/>
+                            <constraint id="75253" firstItem="223" firstAttribute="top" secondItem="742" secondAttribute="bottom" constant="20"/>
+                            <constraint id="75254" firstItem="742" firstAttribute="centerX" secondItem="226" secondAttribute="centerX"/>
+                            <constraint id="77364" firstItem="75255" firstAttribute="top" secondItem="0sS-k9-ldl" secondAttribute="centerY" constant="28"/>
+                            <constraint id="77365" firstItem="75255" firstAttribute="centerX" secondItem="0sS-k9-ldl" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Connexion" id="274"/>
+                    <connections>
+                        <outlet property="btnConnect" destination="0sS-k9-ldl" id="name-outlet-0sS-k9-ldl"/>
+                        <outlet property="btnRegister" destination="742" id="name-outlet-742"/>
+                        <outlet property="tfNickField" destination="288" id="name-outlet-288"/>
+                        <outlet property="tfPasswordField" destination="291" id="name-outlet-291"/>
+                        <segue destination="6534" kind="show" identifier="ConnectConfirmAccountSegue" id="6832"/>
+                        <outlet property="btnPasswordLost" destination="75255" id="name-outlet-75255"/>
+                        <segue id="81016" destination="80930" kind="show" identifier="DAuthLoginSegue"/>
+                        <outlet property="uivMainView" destination="226" id="name-outlet-226"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="227" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="199"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="849">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="850" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="847"/>
+                        <viewControllerLayoutGuide type="bottom" id="848"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="851">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom de famille" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2979">
+                                <rect key="frame" x="61" y="185" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5914"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="family-name"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prénom" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2986">
+                                <rect key="frame" x="61" y="233" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5920"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2987">
+                                <rect key="frame" x="61" y="283" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5926"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom d'utilisateur" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2988">
+                                <rect key="frame" x="61" y="336" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5932"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2989">
+                                <rect key="frame" x="61" y="385" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5938"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmer le mot de passe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2990">
+                                <rect key="frame" x="61" y="431" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="5944"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2992">
+                                <rect key="frame" x="96.5" y="598" width="182" height="44"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="6010"/>
+                                    <constraint firstAttribute="height" constant="44" id="6011"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="Inscription"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BtnRegister_TouchUpInside:" destination="850" eventType="touchUpInside" id="3011"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inscription" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4272">
+                                <rect key="frame" x="108" y="89" width="159" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="5907"/>
+                                    <constraint firstAttribute="height" constant="62" id="5908"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4272" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="25" id="5909"/>
+                            <constraint firstItem="4272" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5910"/>
+                            <constraint firstItem="2979" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="121" id="5915"/>
+                            <constraint firstItem="2979" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5916"/>
+                            <constraint firstItem="2986" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="169" id="5921"/>
+                            <constraint firstItem="2986" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5922"/>
+                            <constraint firstItem="2987" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="219" id="5927"/>
+                            <constraint firstItem="2987" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5928"/>
+                            <constraint firstItem="2988" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="272" id="5933"/>
+                            <constraint firstItem="2988" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5934"/>
+                            <constraint firstItem="2989" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="321" id="5939"/>
+                            <constraint firstItem="2989" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5940"/>
+                            <constraint firstItem="2990" firstAttribute="top" secondItem="847" secondAttribute="bottom" constant="367" id="5945"/>
+                            <constraint firstItem="2990" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="5946"/>
+                            <constraint firstItem="848" firstAttribute="top" secondItem="2992" secondAttribute="bottom" constant="25" id="6012"/>
+                            <constraint firstItem="2992" firstAttribute="centerX" secondItem="851" secondAttribute="centerX" id="6013"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRegister" destination="2992" id="name-outlet-2992"/>
+                        <outlet property="tfEmailField" destination="2987" id="name-outlet-2987"/>
+                        <outlet property="tfNameField" destination="2986" id="name-outlet-2986"/>
+                        <outlet property="tfNickNameField" destination="2988" id="name-outlet-2988"/>
+                        <outlet property="tfPasswordConfirmField" destination="2990" id="name-outlet-2990"/>
+                        <outlet property="tfPasswordField" destination="2989" id="name-outlet-2989"/>
+                        <outlet property="tfSurnameField" destination="2979" id="name-outlet-2979"/>
+                        <segue destination="6534" kind="show" identifier="RegisterConfirmAccountSegue" id="73082"/>
+                        <outlet property="uivMainView" destination="851" id="name-outlet-851"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="852" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2683" y="-248"/>
+        </scene>
+        <!--Account Confirm View Controller-->
+        <scene sceneID="6533">
+            <objects>
+                <viewController storyboardIdentifier="AccountConfirmViewController" id="6534" customClass="AccountConfirmViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6531"/>
+                        <viewControllerLayoutGuide type="bottom" id="6532"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6535">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation du compte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51705">
+                                <rect key="frame" x="16" y="75" width="343" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="58096"/>
+                                    <constraint firstAttribute="height" constant="77" id="58097"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63670">
+                                <rect key="frame" x="96.5" y="598" width="182" height="44"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="63675"/>
+                                    <constraint firstAttribute="height" constant="44" id="63676"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="Confirmation"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="UIButton63670_TouchUpInside:" destination="6534" eventType="touchUpInside" id="71931"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65740">
+                                <rect key="frame" x="61" y="390" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="69455"/>
+                                    <constraint firstAttribute="height" constant="30" id="69456"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="73426">
+                                <rect key="frame" x="16" y="153" width="343" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="73430"/>
+                                    <constraint firstAttribute="height" constant="129" id="73431"/>
+                                </constraints>
+                                <string key="text">Lors de votre inscription, un email a été envoyé à votre adresse mail. Celui ci contient un code d'activation. Veuillez le rentrer ci-dessous puis appuier sur confirmer mon compte.</string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76632">
+                                <rect key="frame" x="96.5" y="535" width="182" height="44"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="76635"/>
+                                    <constraint firstAttribute="height" constant="44" id="76636"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="UIButton63670_TouchUpInside:" destination="76634" eventType="touchUpInside" id="76633"/>
+                                    <action selector="BtnAskForNewCode_TouchUpInside:" destination="6534" id="76837" eventType="touchUpInside"/>
+                                </connections>
+                                <state key="normal" title="Nouveau code"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="76816">
+                                <rect key="frame" x="16" y="270" width="343" height="101"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <string key="text">Si vous ne trouvez pas l'e-mail ou que vous l'avez perdu, vous pouvez demander un nouveau code à l'aide du bouton "Nouveau Code".</string>
+                                <constraints>
+                                    <constraint id="76833" firstAttribute="width" constant="343"/>
+                                    <constraint id="76834" firstAttribute="height" constant="101"/>
+                                </constraints>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="51705" firstAttribute="top" secondItem="6531" secondAttribute="bottom" constant="11" id="58716"/>
+                            <constraint firstItem="51705" firstAttribute="centerX" secondItem="6535" secondAttribute="centerX" id="58923"/>
+                            <constraint firstItem="6532" firstAttribute="top" secondItem="63670" secondAttribute="bottom" constant="25" id="63883"/>
+                            <constraint firstItem="63670" firstAttribute="centerX" secondItem="6535" secondAttribute="centerX" id="64090"/>
+                            <constraint firstItem="65740" firstAttribute="centerX" secondItem="6535" secondAttribute="centerX" id="70282"/>
+                            <constraint firstItem="73426" firstAttribute="top" secondItem="6531" secondAttribute="bottom" constant="89" id="73432"/>
+                            <constraint firstItem="73426" firstAttribute="centerX" secondItem="6535" secondAttribute="centerX" id="73433"/>
+                            <constraint id="76723" firstItem="76632" firstAttribute="centerX" secondItem="6535" secondAttribute="centerX"/>
+                            <constraint id="76726" firstItem="6532" firstAttribute="top" secondItem="76632" secondAttribute="bottom" constant="88"/>
+                            <constraint id="76829" firstItem="65740" firstAttribute="top" secondItem="6531" secondAttribute="bottom" constant="326"/>
+                            <constraint id="76835" firstItem="76816" firstAttribute="top" secondItem="6531" secondAttribute="bottom" constant="206"/>
+                            <constraint id="76836" firstItem="76816" firstAttribute="centerX" secondItem="6535" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfConfirmationCodeField" destination="65740" id="name-outlet-65740"/>
+                        <outlet property="btnAskForNewCode" destination="76632" id="name-outlet-76632"/>
+                        <outlet property="uivMainView" destination="6535" id="name-outlet-6535"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6536" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3215" y="169"/>
+        </scene>
+        <scene sceneID="75258">
+            <objects>
+                <viewController id="75259" sceneMemberID="viewController" customClass="PasswordResetViewController" storyboardIdentifier="PasswordResetViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="75256"/>
+                        <viewControllerLayoutGuide type="bottom" id="75257"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="75260">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restauration de mot de passe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77959">
+                                <rect key="frame" x="16" y="89" width="343" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="77961"/>
+                                    <constraint id="77965" firstAttribute="width" constant="343"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="77970" text="Demandez un code de restauration en cliquant sur le bouton ci dessous et vous receverez par mail votre code de restauration.">
+                                <rect key="frame" x="16" y="153" width="343" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="77971"/>
+                                    <constraint id="77976" firstAttribute="height" constant="67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="77981">
+                                <rect key="frame" x="16" y="211" width="343" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="77982"/>
+                                    <constraint id="77983" firstAttribute="height" constant="67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <string key="text">Remplissez ensuite les champs ci dessous, puis procedez au changement de votre mot de passe à l'aide du bouton "Changer le mot de passe".</string>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="78192" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="61.5" y="274" width="252" height="30"/>
+                                <state key="normal" title="Nouveau code de restauration"/>
+                                <constraints>
+                                    <constraint id="78299" firstAttribute="width" constant="252"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="BtnAskForNewCode_TouchUpInside:" destination="75259" id="78302" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="78303" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Nom d'utilisateur">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <constraints>
+                                    <constraint id="80095" firstAttribute="width" constant="343"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="78627" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Code de validation">
+                                <rect key="frame" x="16" y="368" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="80101" firstAttribute="width" constant="343"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="78846" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Nouveau mot de passe">
+                                <rect key="frame" x="16" y="418" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="80107" firstAttribute="width" constant="343"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="79508" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Confirmer le nouveau mot de passe">
+                                <rect key="frame" x="16" y="468" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="80113" firstAttribute="width" constant="343"/>
+                                </constraints>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79735">
+                                <rect key="frame" x="85" y="607" width="205" height="40"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Changer le mot de passe"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="BtnChangePassword_TouchUpInside:" destination="75259" id="80091" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="79738" firstAttribute="width" constant="205"/>
+                                    <constraint id="79739" firstAttribute="height" constant="40"/>
+                                </constraints>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="80247" text="Lorsque vous procédez à un changement de mot de passe via la restauration, votre ancien mot de passe ne fonctionnera plus.">
+                                <rect key="frame" x="16" y="529" width="343" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="80248"/>
+                                    <constraint id="80249" firstAttribute="height" constant="67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="77966" firstItem="77959" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="25"/>
+                            <constraint id="77967" firstItem="77959" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="77977" firstItem="77970" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="89"/>
+                            <constraint id="77978" firstItem="77970" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="78087" firstItem="77981" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="147"/>
+                            <constraint id="78088" firstItem="77981" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="78300" firstItem="78192" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="210"/>
+                            <constraint id="78301" firstItem="78192" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="79971" firstItem="75257" firstAttribute="top" secondItem="79735" secondAttribute="bottom" constant="20"/>
+                            <constraint id="79972" firstItem="79735" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="80096" firstItem="78303" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="254"/>
+                            <constraint id="80097" firstItem="78303" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="80102" firstItem="78627" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="304"/>
+                            <constraint id="80103" firstItem="78627" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="80109" firstItem="78846" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="80114" firstItem="79508" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="404"/>
+                            <constraint id="80115" firstItem="79508" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="80250" firstItem="75257" firstAttribute="top" secondItem="80247" secondAttribute="bottom" constant="71"/>
+                            <constraint id="80251" firstItem="80247" firstAttribute="centerX" secondItem="75260" secondAttribute="centerX"/>
+                            <constraint id="142810" firstItem="78846" firstAttribute="top" secondItem="75256" secondAttribute="bottom" constant="354"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAskForNewCode" destination="78192" id="name-outlet-78192"/>
+                        <outlet property="tfNickNameField" destination="78303" id="name-outlet-78303"/>
+                        <outlet property="tfCodeField" destination="78627" id="name-outlet-78627"/>
+                        <outlet property="tfPasswordField" destination="78846" id="name-outlet-78846"/>
+                        <outlet property="tfPasswordConfirmField" destination="79508" id="name-outlet-79508"/>
+                        <outlet property="btnChangePassword" destination="79735" id="name-outlet-79735"/>
+                        <outlet property="uivMainView" destination="75260" id="name-outlet-75260"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75261" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="643"/>
+        </scene>
+        <scene sceneID="80929">
+            <objects>
+                <viewController id="80930" sceneMemberID="viewController" customClass="DAuthLoginViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="80927"/>
+                        <viewControllerLayoutGuide type="bottom" id="80928"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="80931">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81162">
+                                <rect key="frame" x="96.5" y="598" width="182" height="44"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="81165"/>
+                                    <constraint firstAttribute="height" constant="44" id="81166"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <state key="normal" title="Restaurer le mot de passe"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="UIButton63670_TouchUpInside:" destination="81164" eventType="touchUpInside" id="81163"/>
+                                    <segue id="81690" destination="75259" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81167">
+                                <rect key="frame" x="96.5" y="535" width="182" height="44"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="81171"/>
+                                    <constraint firstAttribute="height" constant="44" id="81172"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="UIButton63670_TouchUpInside:" destination="81169" eventType="touchUpInside" id="81168"/>
+                                    <action selector="BtnAskForNewCode_TouchUpInside:" destination="81164" id="81170" eventType="touchUpInside"/>
+                                    <action selector="BtnConfirmDAuth_TouchUpInside:" destination="80930" id="134700" eventType="touchUpInside"/>
+                                </connections>
+                                <state key="normal" title="Confirmation"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81173">
+                                <rect key="frame" x="61" y="390" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="81174"/>
+                                    <constraint firstAttribute="height" constant="30" id="81175"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="81176">
+                                <rect key="frame" x="16" y="153" width="343" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="81177"/>
+                                    <constraint firstAttribute="height" constant="129" id="81178"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <string key="text">La double authentification est activée sur ce compte. Ouvrez votre application Google Authentificator puis rentrez le code affiché relatif à votre compte PetLaForme.</string>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="81179">
+                                <rect key="frame" x="16" y="270" width="343" height="101"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <constraints>
+                                    <constraint id="81180" firstAttribute="width" constant="343"/>
+                                    <constraint id="81181" firstAttribute="height" constant="101"/>
+                                </constraints>
+                                <string key="text">Si vous ne parvenez pas à vous procurer ce code, vous pouvez désactiver la double auth en procédant à une restauration du mot de passe.</string>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Authentification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81184">
+                                <rect key="frame" x="16" y="75" width="343" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="81185"/>
+                                    <constraint firstAttribute="height" constant="77" id="81186"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="138378" firstItem="81184" firstAttribute="top" secondItem="80927" secondAttribute="bottom" constant="11"/>
+                            <constraint id="138630" firstItem="81184" firstAttribute="centerX" secondItem="80931" secondAttribute="centerX"/>
+                            <constraint id="138882" firstItem="81176" firstAttribute="top" secondItem="80927" secondAttribute="bottom" constant="89"/>
+                            <constraint id="139134" firstItem="81176" firstAttribute="centerX" secondItem="80931" secondAttribute="centerX"/>
+                            <constraint id="139386" firstItem="81179" firstAttribute="top" secondItem="80927" secondAttribute="bottom" constant="206"/>
+                            <constraint id="139638" firstItem="81179" firstAttribute="centerX" secondItem="80931" secondAttribute="centerX"/>
+                            <constraint id="139890" firstItem="81173" firstAttribute="top" secondItem="80927" secondAttribute="bottom" constant="326"/>
+                            <constraint id="140142" firstItem="81173" firstAttribute="centerX" secondItem="80931" secondAttribute="centerX"/>
+                            <constraint id="140394" firstItem="80928" firstAttribute="top" secondItem="81167" secondAttribute="bottom" constant="88"/>
+                            <constraint id="140646" firstItem="81167" firstAttribute="centerX" secondItem="80931" secondAttribute="centerX"/>
+                            <constraint id="140898" firstItem="80928" firstAttribute="top" secondItem="81162" secondAttribute="bottom" constant="25"/>
+                            <constraint id="141150" firstItem="81162" firstAttribute="centerX" secondItem="80931" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfCodeField" destination="81173" id="name-outlet-81173"/>
+                        <outlet property="btnConfirmDAuth" destination="81167" id="name-outlet-81167"/>
+                        <outlet property="btnResetPassword" destination="81162" id="name-outlet-81162"/>
+                        <outlet property="uivMainView" destination="80931" id="name-outlet-80931"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80932" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2055" y="653"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon/pet-shop.png" width="256" height="256"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6832"/>
+    </inferredMetricsTieBreakers>
+</document>

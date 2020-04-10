@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.ibtool.document.errors</key>
+	<dict/>
+	<key>com.apple.ibtool.document.notices</key>
+	<dict>
+		<key>8179</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>8179</string>
+				</array>
+				<key>message</key>
+				<string>Value other than autosizing specified for width (System items, other than fixed spaces, should use autosizing)</string>
+				<key>type</key>
+				<string>IBIssueTypeDiscouragedConfiguration</string>
+				<key>type-value</key>
+				<integer>11</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>com.apple.ibtool.document.warnings</key>
+	<dict>
+		<key>8143</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>1561</string>
+					<string>8143</string>
+				</array>
+				<key>message</key>
+				<string>Plain Style unsupported in a Navigation Item</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>8161</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>1561</string>
+					<string>8161</string>
+				</array>
+				<key>message</key>
+				<string>Plain Style unsupported in a Navigation Item</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>8179</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>1561</string>
+					<string>8179</string>
+				</array>
+				<key>message</key>
+				<string>Plain Style unsupported in a Navigation Item</string>
+				<key>type</key>
+				<string>IBIssueTypeUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

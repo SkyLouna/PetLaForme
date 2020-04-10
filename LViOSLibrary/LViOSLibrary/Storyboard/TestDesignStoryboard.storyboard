@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="199">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="198">
+            <objects>
+                <viewController id="199" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="196"/>
+                        <viewControllerLayoutGuide type="bottom" id="197"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="200">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="206" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="checked.png">
+                                <rect key="frame" x="87" y="148" width="240" height="128"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="203" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" clipsSubviews="YES" alpha="0.8">
+                                <rect key="frame" x="5" y="105" width="365" height="80"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.55686274509803924" blue="0" alpha="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="204" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="checked.png">
+                                        <rect key="frame" x="20" y="8" width="64" height="64"/>
+                                    </imageView>
+                                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="205" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                        <rect key="frame" x="95" y="8" width="280" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24" weight="black"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bla fhiafopadhv gbsoaodpvua gnishbau9 fbouafohadv vuahvpdo aduvadv" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="207" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2" adjustsFontForContentSizeCategory="YES">
+                                        <rect key="frame" x="95" y="32" width="280" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="201" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2868" y="2031"/>
+        </scene>
+    </scenes>
+</document>

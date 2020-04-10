@@ -1,0 +1,9 @@
+/Users/skylouna/Documents/Projects/PetLaForme/PetLaForme/bin/iPhoneSimulator/Debug/PetLaForme.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/mscorlib.dll
+/Users/skylouna/Desktop/2-ContenuProjet/APP/PLFAPI/PLFAPI/bin/Debug/PLFAPI.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/System.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/Mono.Security.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/System.Xml.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/lib/mono/Xamarin.iOS/System.Core.dll
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/bin/Debug/LViOSLibrary.dll

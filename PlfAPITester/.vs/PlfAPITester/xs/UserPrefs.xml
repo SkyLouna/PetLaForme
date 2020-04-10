@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{CB5FA9DD-A9B2-4A4C-93B8-80EFD7F3A74D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PlfAPITester/Program.cs">
+    <Files>
+      <File FileName="PlfAPITester/Program.cs" Line="13" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PlfAPITester" expanded="True">
+            <Node name="PlfAPITester" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PlfAPITester PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

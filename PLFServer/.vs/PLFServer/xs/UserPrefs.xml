@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{B46BB5F2-6CB5-4F9E-89BC-E8B29BB730C5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PLFServer/Manager/MailManager.cs">
+    <Files>
+      <File FileName="PLFServer/Object/MySQL/MySQLConnection.cs" Line="37" Column="10" />
+      <File FileName="PLFServer/Program.cs" />
+      <File FileName="PLFServer/Manager/MySQLManager.cs" Line="25" Column="72" />
+      <File FileName="PLFServer/Manager/MailManager.cs" Line="27" Column="112" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PLFServer" expanded="True">
+            <Node name="PLFServer" expanded="True">
+              <Node name="Config" expanded="True" />
+              <Node name="Manager" expanded="True">
+                <Node name="MailManager.cs" selected="True" />
+              </Node>
+              <Node name="Object" expanded="True">
+                <Node name="MySQL" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PLFServer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <AuthorInfo Name="Trana Valentin" Email="tranava@etml.educanet2.ch" Copyright="Trana Valentin" Company="ETML" Trademark="" />
+</Properties>

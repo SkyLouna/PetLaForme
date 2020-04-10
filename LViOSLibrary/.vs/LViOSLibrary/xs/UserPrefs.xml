@@ -1,0 +1,38 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LViOSLibrary/Object/MessageBar/ToastMessageBar.cs">
+    <Files>
+      <File FileName="LViOSLibrary/Storyboard/TestDesignStoryboard.storyboard" />
+      <File FileName="LViOSLibrary/Object/MessageBar/ToastMessageBar.cs" Line="60" Column="81" />
+      <File FileName="LViOSLibrary/Helper/BarHelper.cs" Line="15" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LViOSLibrary" expanded="True">
+            <Node name="LViOSLibrary" expanded="True">
+              <Node name="Helper" expanded="True" />
+              <Node name="Object" expanded="True">
+                <Node name="MessageBar" expanded="True">
+                  <Node name="ToastMessageBar.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Storyboard" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="LViOSLibrary" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="skylouna" Email="tranava@etml.educanet2.ch" Copyright="Trana Valentin" Company="" Trademark="" />
+  <MultiItemStartupConfigurations />
+</Properties>

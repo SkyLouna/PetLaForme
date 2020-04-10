@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{3E1AF224-4AB6-49B0-B657-847939685F1F}|Default">
+  <MonoDevelop.Ide.ItemProperties.PetLaForme PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EA9B59A9-7CEA-461F-A1BC-250B250E5250" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PetLaForme" expanded="True">
+            <Node name="PetLaForme" expanded="True">
+              <Node name="StoryBoard" expanded="True" />
+              <Node name="ViewController" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="PetLaForme" expanded="True">
+            <Node name="PetLaForme" expanded="True">
+              <Node name="References" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,281 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{3E1AF224-4AB6-49B0-B657-847939685F1F}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PetLaForme</RootNamespace>
+    <AssemblyName>PetLaForme</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Catalina Trana (G6DCYQB8WE)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>22755</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Catalina Trana (G6DCYQB8WE)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Catalina Trana (G6DCYQB8WE)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>54474</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="PLFAPI">
+      <HintPath>..\..\..\..\Desktop\2-ContenuProjet\APP\PLFAPI\PLFAPI\bin\Debug\PLFAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="LViOSLibrary">
+      <HintPath>..\..\LViOSLibrary\LViOSLibrary\bin\Debug\LViOSLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\First.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\First.imageset\vector.pdf" />
+    <ImageAsset Include="Assets.xcassets\Second.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Second.imageset\vector.pdf" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\logo-iphone-180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Tab\" />
+    <Folder Include="StoryBoard\" />
+    <Folder Include="Resources\Icon\" />
+    <Folder Include="ViewController\" />
+    <Folder Include="ViewController\Connection\" />
+    <Folder Include="Object\" />
+    <Folder Include="Helper\" />
+    <Folder Include="Manager\" />
+    <Folder Include="Network\" />
+    <Folder Include="ViewController\Tab\" />
+    <Folder Include="ViewController\Profile\" />
+    <Folder Include="Object\Card\" />
+    <Folder Include="Resources\Pet\" />
+    <Folder Include="Resources\Attribute\" />
+    <Folder Include="ViewController\Pet\" />
+    <Folder Include="ViewController\Pet\Share\" />
+    <Folder Include="Object\Connection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="StoryBoard\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="StoryBoard\Connection.storyboard" />
+    <InterfaceDefinition Include="StoryBoard\Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController\Connection\ConnectViewController.cs" />
+    <Compile Include="ViewController\Connection\ConnectViewController.designer.cs">
+      <DependentUpon>ConnectViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Network\TCPClient.cs" />
+    <Compile Include="ViewController\Connection\RegisterViewController.cs" />
+    <Compile Include="ViewController\Connection\RegisterViewController.designer.cs">
+      <DependentUpon>RegisterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ServerHelper.cs" />
+    <Compile Include="ViewController\Tab\PetViewController.cs" />
+    <Compile Include="ViewController\Tab\PetViewController.designer.cs">
+      <DependentUpon>PetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\PetManager.cs" />
+    <Compile Include="Helper\MessageBox.cs" />
+    <Compile Include="Helper\MSGBank.cs" />
+    <Compile Include="ViewController\Tab\MainTabBarController.cs" />
+    <Compile Include="ViewController\Tab\MainTabBarController.designer.cs">
+      <DependentUpon>MainTabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Profile\ProfileModifyViewController.cs" />
+    <Compile Include="ViewController\Profile\ProfileModifyViewController.designer.cs">
+      <DependentUpon>ProfileModifyViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object\Card\CustomCard.cs" />
+    <Compile Include="Object\Card\PetCard.cs" />
+    <Compile Include="ViewController\Pet\AddNewPetViewController.cs" />
+    <Compile Include="ViewController\Pet\AddNewPetViewController.designer.cs">
+      <DependentUpon>AddNewPetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\IosPetHelper.cs" />
+    <Compile Include="Object\Card\AttributCard.cs" />
+    <Compile Include="ViewController\Pet\UserPetViewController.cs" />
+    <Compile Include="ViewController\Pet\UserPetViewController.designer.cs">
+      <DependentUpon>UserPetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Pet\PetNavigationViewController.cs" />
+    <Compile Include="ViewController\Pet\PetNavigationViewController.designer.cs">
+      <DependentUpon>PetNavigationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Pet\AttributViewController.cs" />
+    <Compile Include="ViewController\Pet\AttributViewController.designer.cs">
+      <DependentUpon>AttributViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Pet\Share\PetShareViewController.cs" />
+    <Compile Include="ViewController\Pet\Share\PetShareViewController.designer.cs">
+      <DependentUpon>PetShareViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Pet\Share\PetCancelShareViewController.cs" />
+    <Compile Include="ViewController\Pet\Share\PetCancelShareViewController.designer.cs">
+      <DependentUpon>PetCancelShareViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ConnectionHelper.cs" />
+    <Compile Include="Object\Connection\ConnectionProfile.cs" />
+    <Compile Include="ViewController\Tab\ProfilePreviewViewController.cs" />
+    <Compile Include="ViewController\Tab\ProfilePreviewViewController.designer.cs">
+      <DependentUpon>ProfilePreviewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Connection\AccountConfirmViewController.cs" />
+    <Compile Include="ViewController\Connection\AccountConfirmViewController.designer.cs">
+      <DependentUpon>AccountConfirmViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Connection\PasswordResetViewController.cs" />
+    <Compile Include="ViewController\Connection\PasswordResetViewController.designer.cs">
+      <DependentUpon>PasswordResetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Connection\ConnectNavViewController.cs" />
+    <Compile Include="ViewController\Connection\ConnectNavViewController.designer.cs">
+      <DependentUpon>ConnectNavViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Connection\DAuthLoginViewController.cs" />
+    <Compile Include="ViewController\Connection\DAuthLoginViewController.designer.cs">
+      <DependentUpon>DAuthLoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Profile\DAuthConfigViewController.cs" />
+    <Compile Include="ViewController\Profile\DAuthConfigViewController.designer.cs">
+      <DependentUpon>DAuthConfigViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Tab\user2-tab.png" />
+    <BundleResource Include="Resources\Icon\pet-shop.png" />
+    <BundleResource Include="Resources\Tab\bone.png" />
+    <BundleResource Include="Resources\Icon\user2.png" />
+    <BundleResource Include="Resources\Icon\logout.png" />
+    <BundleResource Include="Resources\Icon\edit.png" />
+    <BundleResource Include="Resources\Icon\save.png" />
+    <BundleResource Include="Resources\Icon\checked.png" />
+    <BundleResource Include="Resources\Attribute\birthday.png" />
+    <BundleResource Include="Resources\Attribute\competition.png" />
+    <BundleResource Include="Resources\Attribute\deathday.png" />
+    <BundleResource Include="Resources\Attribute\drug.png" />
+    <BundleResource Include="Resources\Attribute\food.png" />
+    <BundleResource Include="Resources\Attribute\sexe.png" />
+    <BundleResource Include="Resources\Attribute\veterinary.png" />
+    <BundleResource Include="Resources\Attribute\walking.png" />
+    <BundleResource Include="Resources\Attribute\washing.png" />
+    <BundleResource Include="Resources\Attribute\weight.png" />
+    <BundleResource Include="Resources\Pet\bat.png" />
+    <BundleResource Include="Resources\Pet\bear.png" />
+    <BundleResource Include="Resources\Pet\butterfly.png" />
+    <BundleResource Include="Resources\Pet\cat.png" />
+    <BundleResource Include="Resources\Pet\chipmunk.png" />
+    <BundleResource Include="Resources\Pet\cricket.png" />
+    <BundleResource Include="Resources\Pet\crocodile.png" />
+    <BundleResource Include="Resources\Pet\dog.png" />
+    <BundleResource Include="Resources\Pet\duck.png" />
+    <BundleResource Include="Resources\Pet\fish.png" />
+    <BundleResource Include="Resources\Pet\fox.png" />
+    <BundleResource Include="Resources\Pet\frog.png" />
+    <BundleResource Include="Resources\Pet\giraffe.png" />
+    <BundleResource Include="Resources\Pet\hamster.png" />
+    <BundleResource Include="Resources\Pet\hedgehog.png" />
+    <BundleResource Include="Resources\Pet\hen.png" />
+    <BundleResource Include="Resources\Pet\horse.png" />
+    <BundleResource Include="Resources\Pet\koala.png" />
+    <BundleResource Include="Resources\Pet\License.txt" />
+    <BundleResource Include="Resources\Pet\lion.png" />
+    <BundleResource Include="Resources\Pet\lizard.png" />
+    <BundleResource Include="Resources\Pet\monkey.png" />
+    <BundleResource Include="Resources\Pet\mouse.png" />
+    <BundleResource Include="Resources\Pet\owl.png" />
+    <BundleResource Include="Resources\Pet\panda.png" />
+    <BundleResource Include="Resources\Pet\penguin.png" />
+    <BundleResource Include="Resources\Pet\pig.png" />
+    <BundleResource Include="Resources\Pet\rabbit.png" />
+    <BundleResource Include="Resources\Pet\snail.png" />
+    <BundleResource Include="Resources\Pet\snake.png" />
+    <BundleResource Include="Resources\Pet\spider.png" />
+    <BundleResource Include="Resources\Pet\tiger.png" />
+    <BundleResource Include="Resources\Pet\turtle.png" />
+    <BundleResource Include="Resources\Pet\wolf.png" />
+    <BundleResource Include="Resources\Icon\share.png" />
+    <BundleResource Include="Resources\Icon\allow-cloud.png" />
+    <BundleResource Include="Resources\Icon\cancel-cloud.png" />
+    <BundleResource Include="Resources\Pet\other.png" />
+    <BundleResource Include="Resources\Icon\bone.png" />
+    <BundleResource Include="Resources\Icon\substract.png" />
+    <BundleResource Include="Resources\Icon\garbage.png" />
+    <BundleResource Include="Resources\Icon\plus-button.png" />
+    <BundleResource Include="Resources\Icon\dauth-locked.png" />
+    <BundleResource Include="Resources\Icon\dauth-unlocked.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

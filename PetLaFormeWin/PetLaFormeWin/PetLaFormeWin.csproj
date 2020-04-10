@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCE5D111-27BF-4A73-8575-DB7BC4E5CDB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PetLaFormeWin</RootNamespace>
+    <AssemblyName>PetLaFormeWin</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>pet-shop-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C5C3F1C4C2DF4B902F9A85B1B64C1B4FE8CE78C4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PetLaFormeWin_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PLFAPI, Version=1.0.6750.17844, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PLFAPI\PLFAPI\bin\Debug\PLFAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Connection\DAuthLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connection\DAuthLoginForm.Designer.cs">
+      <DependentUpon>DAuthLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connection\UserRegisterLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connection\UserRegisterLoginForm.Designer.cs">
+      <DependentUpon>UserRegisterLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pet\AddPetBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pet\AddPetBoard.Designer.cs">
+      <DependentUpon>AddPetBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pet\KillShareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pet\KillShareForm.Designer.cs">
+      <DependentUpon>KillShareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainBoard.Designer.cs">
+      <DependentUpon>MainBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pet\PetAttributePreviewBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pet\PetAttributePreviewBoard.Designer.cs">
+      <DependentUpon>PetAttributePreviewBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pet\PetsPreviewBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pet\PetsPreviewBoard.Designer.cs">
+      <DependentUpon>PetsPreviewBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pet\PetViewBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pet\PetViewBoard.Designer.cs">
+      <DependentUpon>PetViewBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pet\SharePetBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pet\SharePetBoard.Designer.cs">
+      <DependentUpon>SharePetBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connection\UserAccountConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connection\UserAccountConfirmForm.Designer.cs">
+      <DependentUpon>UserAccountConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\UserDAuthSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\UserDAuthSettingsForm.Designer.cs">
+      <DependentUpon>UserDAuthSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\UserProfileBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\UserProfileBoard.Designer.cs">
+      <DependentUpon>UserProfileBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Connection\UserResetPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Connection\UserResetPasswordForm.Designer.cs">
+      <DependentUpon>UserResetPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\UserSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\UserSettingsForm.Designer.cs">
+      <DependentUpon>UserSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ConnectionHelper.cs" />
+    <Compile Include="Helper\MSGBank.cs" />
+    <Compile Include="Helper\ServerHelper.cs" />
+    <Compile Include="Manager\PetManager.cs" />
+    <Compile Include="Network\TCPClient.cs" />
+    <Compile Include="Object\Cards\AddCard.cs" />
+    <Compile Include="Object\Cards\GraphicCard.cs" />
+    <Compile Include="Object\Cards\ImageCard.cs" />
+    <Compile Include="Object\Cards\AttributCard.cs" />
+    <Compile Include="Object\Cards\PetCard.cs" />
+    <Compile Include="Object\Connection\ConnectionProfile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Connection\DAuthLoginForm.resx">
+      <DependentUpon>DAuthLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connection\UserRegisterLoginForm.en.resx">
+      <DependentUpon>UserRegisterLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connection\UserRegisterLoginForm.fr-CH.resx">
+      <DependentUpon>UserRegisterLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connection\UserRegisterLoginForm.resx">
+      <DependentUpon>UserRegisterLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pet\AddPetBoard.resx">
+      <DependentUpon>AddPetBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pet\KillShareForm.resx">
+      <DependentUpon>KillShareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainBoard.resx">
+      <DependentUpon>MainBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pet\PetAttributePreviewBoard.resx">
+      <DependentUpon>PetAttributePreviewBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pet\PetsPreviewBoard.resx">
+      <DependentUpon>PetsPreviewBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pet\PetViewBoard.resx">
+      <DependentUpon>PetViewBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pet\SharePetBoard.resx">
+      <DependentUpon>SharePetBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connection\UserAccountConfirmForm.resx">
+      <DependentUpon>UserAccountConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\UserDAuthSettingsForm.resx">
+      <DependentUpon>UserDAuthSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\UserProfileBoard.resx">
+      <DependentUpon>UserProfileBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Connection\UserResetPasswordForm.resx">
+      <DependentUpon>UserResetPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\UserSettingsForm.resx">
+      <DependentUpon>UserSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="PetLaFormeWin_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind-double-arrows-angles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pet-shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pet-shop-icon.ico" />
+    <None Include="Resources\dauth-unlocked.png" />
+    <None Include="Resources\dauth-locked.png" />
+    <None Include="Resources\right-arrow.png" />
+    <None Include="Resources\left-arrow.png" />
+    <None Include="Resources\allow-cloud.png" />
+    <None Include="Resources\cancel-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8D4CDC4-1DF1-4281-8296-D6AA5FC44331}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PLFAPI</RootNamespace>
+    <AssemblyName>PLFAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\NetworkError\NetworkError.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketAddAttribut.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDeleteAttribut.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDisableDAuth.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDownloadAttribut.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketEnableDAuth.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketGetAmountOfAttributs.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDownloadPet.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDownloadAttributs.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDownloadPetsID.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketSharePetList.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketKillSharePet.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUpdatePet.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketSharePet.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDeletePet.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketPing.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketAddPet.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserAskActivateAccount.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserResetPassword.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserAskResetPassword.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserLogin.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketDownloadPets.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserActivateAccount.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserUpdateProfile.cs" />
+    <Compile Include="Communication\NetworkPackets\Client\ClientPacketUserRegister.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketGetAmountOfAttributs.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketDownloadAttributs.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketDownloadAttribut.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketDownloadPet.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketDownloadPetsID.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketSharePetList.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketDownloadPets.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketPing.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketUserLogin.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketConfirmation.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketAddPet.cs" />
+    <Compile Include="Communication\NetworkPackets\Server\ServerPacketUserRegister.cs" />
+    <Compile Include="Helper\DAuthHelper.cs" />
+    <Compile Include="Helper\NetworkHelper.cs" />
+    <Compile Include="Helper\PetHelper.cs" />
+    <Compile Include="Object\DAuth\GoogleTOTP.cs" />
+    <Compile Include="Object\DAuth\Transcoder.cs" />
+    <Compile Include="Object\Pet\Attribute\PetAttribute.cs" />
+    <Compile Include="Object\Pet\Attribute\PetAttributeType.cs" />
+    <Compile Include="Object\Pet\PetType.cs" />
+    <Compile Include="Object\Pet\PLFPet.cs" />
+    <Compile Include="Object\User\PLFUser.cs" />
+    <Compile Include="PLFAPI.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\ConsoleHelper.cs" />
+    <Compile Include="Object\Ext\ObjectExt.cs" />
+    <Compile Include="Object\Packet\Packet.cs" />
+    <Compile Include="Object\Packet\PacketType.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chipmunk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cricket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giraffe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hedgehog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\owl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penguin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rabbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birthday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\competition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deathday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veterinary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\washing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weight.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

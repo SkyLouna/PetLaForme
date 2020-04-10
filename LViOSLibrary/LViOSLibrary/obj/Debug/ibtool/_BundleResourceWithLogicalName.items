@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_BundleResourceWithLogicalName Include="obj/Debug/ibtool/TestDesignStoryboard.storyboardc/199-view-200.nib">
+      <InterfaceDefinition>Storyboard/TestDesignStoryboard.storyboard</InterfaceDefinition>
+      <LogicalName>TestDesignStoryboard.storyboardc/199-view-200.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/Debug/ibtool/TestDesignStoryboard.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/Debug/ibtool/TestDesignStoryboard.storyboardc/Info.plist">
+      <InterfaceDefinition>Storyboard/TestDesignStoryboard.storyboard</InterfaceDefinition>
+      <LogicalName>TestDesignStoryboard.storyboardc/Info.plist</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/Debug/ibtool/TestDesignStoryboard.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/Debug/ibtool/TestDesignStoryboard.storyboardc/UIViewController-199.nib">
+      <InterfaceDefinition>Storyboard/TestDesignStoryboard.storyboard</InterfaceDefinition>
+      <LogicalName>TestDesignStoryboard.storyboardc/UIViewController-199.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/Debug/ibtool/TestDesignStoryboard.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+  </ItemGroup>
+</Project>

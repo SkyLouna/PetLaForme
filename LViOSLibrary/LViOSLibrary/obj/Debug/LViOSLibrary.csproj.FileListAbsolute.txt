@@ -1,0 +1,10 @@
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/bin/Debug/LViOSLibrary.dll
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/bin/Debug/LViOSLibrary.pdb
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/optimized/Icons/mb-success.png
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/optimized/Icons/mb-error.png
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/optimized/Icons/mb-info.png
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/optimized/
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/LViOSLibrary.csproj.CoreCompileInputs.cache
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/LViOSLibrary.dll
+/Users/skylouna/Documents/Projects/LViOSLibrary/LViOSLibrary/obj/Debug/LViOSLibrary.pdb
